@@ -1,0 +1,19 @@
+[project]
+name = "anomaly-detection"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "keras>=3.15.1",
+    "pyod>=3.6.6",
+    "scikit-learn>=1.9.1",
+    "tensorflow>=2.22.0rc0",
+]
+
+[project.scripts]
+anomaly-detection = "anomaly_detection:main"
+
+[build-system]
+requires = ["uv_build>=0.12.23,<0.13.0"]
+build-backend = "uv_build"
